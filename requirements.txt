@@ -1,3 +1,4 @@
+matplotlib
 langchain
 openai
 google-search-results
