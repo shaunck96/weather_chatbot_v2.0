@@ -134,10 +134,12 @@ st.subheader("Weather Forecasts")
 
 nws_weather_forecast_df = pd.read_csv(r'./nws_weather_forecast.csv')
 time_and_day_weather_forecast_df = pd.read_csv(r'./time_and_day_weather_forecast.csv')
+st.subheader("National Weather Service: ")
 st.dataframe(nws_weather_forecast_df.style
              .set_table_styles([{'selector': 'th', 'props': [('text-align', 'center')]}])
              .set_properties(**{'text-align': 'center', 'font-size': '12px'}), height=400, width=800)
 
+st.subheader("Time&Date Weather Service: ")
 st.dataframe(time_and_day_weather_forecast_df.style
              .set_table_styles([{'selector': 'th', 'props': [('text-align', 'center')]}])
              .set_properties(**{'text-align': 'center', 'font-size': '12px'}), height=400, width=800)
