@@ -5,8 +5,8 @@ import pandas as pd
 from datetime import datetime
 
 try:
-    connection = psycopg2.connect(host="localhost", port="5434", database="master",
-                                user="postgres", password="Toyotacamry1996#")
+    connection = psycopg2.connect(host="localhost", port=, database="master",
+                                user="postgres", password="")
     crsr = connection.cursor()
 
     print('PostgreSQL database version: ')
