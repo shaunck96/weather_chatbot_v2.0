@@ -19,8 +19,8 @@ from langchain.agents import initialize_agent
 # Function to initialize your chatbot
 def initialize_chatbot():
     # Set API keys (already set in your environment)
-    os.environ["OPENAI_API_KEY"] = "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"
-    os.environ["SERPAPI_API_KEY"] = "a52405e62b1522253260891971ed21903bebe6ba7879bca152f87a0de5bef4b1"
+    os.environ["OPENAI_API_KEY"] = ""
+    os.environ["SERPAPI_API_KEY"] = ""
 
     # Step 2: Create a JSON 'weather_agent.json' with the following metadata
     weather_agent = {
