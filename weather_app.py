@@ -133,9 +133,7 @@ st.image([img1], width=600, caption=["Image 1"], use_column_width=True)
 st.subheader("Weather Forecasts")
 
 nws_weather_forecast_df = pd.read_csv(r'./nws_weather_forecast.csv')
-nws_weather_forecast_df = pd.read_csv(r'./time_and_day_weather_forecast.csv')
-# Display forecasts from CSV files as stylish tables with headers
-print(forecast_df_nws)
+time_and_day_weather_forecast_df = pd.read_csv(r'./time_and_day_weather_forecast.csv')
 st.dataframe(nws_weather_forecast_df.style
              .set_table_styles([{'selector': 'th', 'props': [('text-align', 'center')]}])
              .set_properties(**{'text-align': 'center', 'font-size': '12px'}), height=400, width=800)
