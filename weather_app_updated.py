@@ -360,8 +360,8 @@ def filter_forecast_data(start_date, end_date):
     return filtered_data
 
 st.subheader("Extract Forecast Weather Information Based On Metrics By Date Range")
-start_date = st.date_input("Select start date:")
-end_date = st.date_input("Select end date:")
+start_date = st.date_input("Select forecast start date:")
+end_date = st.date_input("Select forecast end date:")
 
 # Filter and display data when button is clicked
 if st.button("Generate Plots"):
