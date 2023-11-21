@@ -364,7 +364,7 @@ start_date = st.date_input("Select forecast start date:")
 end_date = st.date_input("Select forecast end date:")
 
 # Filter and display data when button is clicked
-if st.button("Generate Plots"):
+if st.button("Generate Forecast Plots"):
     if start_date < end_date:
         filtered_data = filter_forecast_data(start_date, end_date)
 
