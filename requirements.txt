@@ -8,3 +8,8 @@ streamlit
 #pandasai==0.2.1
 psycopg2-binary
 sqlalchemy
+openmeteo-requests
+requests-cache 
+retry-requests 
+numpy 
+pandas
