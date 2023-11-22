@@ -277,24 +277,24 @@ hourly_historic_data["surface_pressure"] = hourly_surface_pressure
 hourly_historic_data["cloud_cover"] = hourly_cloud_cover
 hourly_historic_data["cloud_cover_low"] = hourly_cloud_cover_low
 hourly_historic_data["cloud_cover_mid"] = hourly_cloud_cover_mid
-hourly_historic["cloud_cover_high"] = hourly_cloud_cover_high
-hourly_historic["et0_fao_evapotranspiration"] = hourly_et0_fao_evapotranspiration
-hourly_historic["vapour_pressure_deficit"] = hourly_vapour_pressure_deficit
-hourly_historic["wind_speed_10m"] = hourly_wind_speed_10m
-hourly_historic["wind_speed_100m"] = hourly_wind_speed_100m
-hourly_historic["wind_direction_10m"] = hourly_wind_direction_10m
-hourly_historic["wind_direction_100m"] = hourly_wind_direction_100m
-hourly_historic["wind_gusts_10m"] = hourly_wind_gusts_10m
-hourly_historic["soil_temperature_0_to_7cm"] = hourly_soil_temperature_0_to_7cm
-hourly_historic["soil_temperature_7_to_28cm"] = hourly_soil_temperature_7_to_28cm
-hourly_historic["soil_temperature_28_to_100cm"] = hourly_soil_temperature_28_to_100cm
-hourly_historic["soil_temperature_100_to_255cm"] = hourly_soil_temperature_100_to_255cm
-hourly_historic["soil_moisture_0_to_7cm"] = hourly_soil_moisture_0_to_7cm
-hourly_historic["soil_moisture_7_to_28cm"] = hourly_soil_moisture_7_to_28cm
-hourly_historic["soil_moisture_28_to_100cm"] = hourly_soil_moisture_28_to_100cm
-hourly_historic["soil_moisture_100_to_255cm"] = hourly_soil_moisture_100_to_255cm
+hourly_historic_data["cloud_cover_high"] = hourly_cloud_cover_high
+hourly_historic_data["et0_fao_evapotranspiration"] = hourly_et0_fao_evapotranspiration
+hourly_historic_data["vapour_pressure_deficit"] = hourly_vapour_pressure_deficit
+hourly_historic_data["wind_speed_10m"] = hourly_wind_speed_10m
+hourly_historic_data["wind_speed_100m"] = hourly_wind_speed_100m
+hourly_historic_data["wind_direction_10m"] = hourly_wind_direction_10m
+hourly_historic_data["wind_direction_100m"] = hourly_wind_direction_100m
+hourly_historic_data["wind_gusts_10m"] = hourly_wind_gusts_10m
+hourly_historic_data["soil_temperature_0_to_7cm"] = hourly_soil_temperature_0_to_7cm
+hourly_historic_data["soil_temperature_7_to_28cm"] = hourly_soil_temperature_7_to_28cm
+hourly_historic_data["soil_temperature_28_to_100cm"] = hourly_soil_temperature_28_to_100cm
+hourly_historic_data["soil_temperature_100_to_255cm"] = hourly_soil_temperature_100_to_255cm
+hourly_historic_data["soil_moisture_0_to_7cm"] = hourly_soil_moisture_0_to_7cm
+hourly_historic_data["soil_moisture_7_to_28cm"] = hourly_soil_moisture_7_to_28cm
+hourly_historic_data["soil_moisture_28_to_100cm"] = hourly_soil_moisture_28_to_100cm
+hourly_historic_data["soil_moisture_100_to_255cm"] = hourly_soil_moisture_100_to_255cm
 
-weather_data = pd.DataFrame(data = hourly_data)
+weather_data = pd.DataFrame(data = hourly_historic_data)
 
 # Define function to filter data based on date range
 def filter_data(start_date, end_date):
