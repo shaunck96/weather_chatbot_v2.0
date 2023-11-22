@@ -346,7 +346,7 @@ if st.button("Generate Plots"):
 
             # Add marker labels (values) at specific data points
             for index, value in filtered_data[[metric, 'local_time']].iterrows():
-                ax.text(value['local_time'], value[metric], round(float(value[metric]), 0), ha='left', va='bottom', fontsize=6)
+                ax.text(value['date'], value[metric], round(float(value[metric]), 0), ha='left', va='bottom', fontsize=6)
 
         # Customize plot appearance
         plt.xlabel('Date')
