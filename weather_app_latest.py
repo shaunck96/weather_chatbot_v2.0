@@ -350,7 +350,7 @@ if st.button("Generate Plots"):
                     float_value = float(value[metric])
                 else:
                     float_value = 0.0  # or any other default value
-		        ax.text(value['date'], float_value, round(float_value, 0), ha='left', va='bottom', fontsize=6)
+                ax.text(value['date'], float_value, round(float_value, 0), ha='left', va='bottom', fontsize=6)
 		    
         # Customize plot appearance
         plt.xlabel('Date')
