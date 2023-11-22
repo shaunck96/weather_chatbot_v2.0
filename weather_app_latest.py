@@ -338,14 +338,14 @@ if st.button("Generate Plots"):
 
         for i, (metric, color) in enumerate(zip(weather_metrics, colors)):
             ax = axes[i]
-            ax.plot(filtered_data['local_time'], filtered_data[metric], color=color, marker='o', markersize=5, label=metric)
+            ax.plot(filtered_data['date'], filtered_data[metric], color=color, marker='o', markersize=5, label=metric)
             ax.set_ylabel(metric)
             ax.grid(True)
             ax.set_title(metric)
             ax.legend()
 
             # Add marker labels (values) at specific data points
-            for index, value in filtered_data[[metric, 'local_time']].iterrows():
+            for index, value in filtered_data[[metric, 'date']].iterrows():
                 ax.text(value['date'], value[metric], round(float(value[metric]), 0), ha='left', va='bottom', fontsize=6)
 
         # Customize plot appearance
