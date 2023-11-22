@@ -346,9 +346,9 @@ if st.button("Generate Plots"):
 
             # Add marker labels (values) at specific data points
             for index, value in filtered_data[[metric, 'date']].iterrows():
-		try:
+		if float(value[metric]):
 		    float_value = float(value[metric])
-		except TypeError:
+		else:
 		    # Handle missing or invalid data here
 		    float_value = 0.0  # or any other default value
 		ax.text(value['date'], float_value, round(float_value, 0), ha='left', va='bottom', fontsize=6)
